@@ -36,3 +36,22 @@ sample_students = {
         "History": 85
     }
 }
+
+
+
+
+
+def add_new_student(student, name):
+     student[name] = {}
+     print(f"New student edit successfully")
+
+add_new_student(sample_students, "Ahsan")
+
+
+def record_grade(students, name, subject, grade):
+    students[name][subject] = grade
+    print(f"Recorded grade {grade} for {name} in {subject}.")
+
+record_grade(sample_students, "Ahsan", "Python", 85)
+
+print(sample_students)
